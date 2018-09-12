@@ -10,9 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var previewView = VideoPreviewView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Add preview View as a subview
+        view.addSubview(previewView)
+    }
+
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+
+        previewView.frame = view.bounds
     }
 
     override func didReceiveMemoryWarning() {
