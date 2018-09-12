@@ -8,10 +8,13 @@
 
 import UIKit
 import Photos
+import Fritz
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
 
     var previewView = VideoPreviewView()
+
+    lazy var styleModel = FritzVisionStyleModel.starryNight
 
     private lazy var captureSession: AVCaptureSession = {
         let session = AVCaptureSession()
@@ -55,9 +58,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        if let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) {
+        let fritzImage = FritzVisionImage(buffer: sampleBuffer)
+        styleModel.predict(fritzImage) { stylizedImage, error in
+            guard let stylizedImage = stylizedImage, error == nil else {
+                print("Error encountered running Style Model")
+                return
+            }
             DispatchQueue.main.async {
-                self.previewView.display(buffer: imageBuffer)
+                self.previewView.display(buffer: stylizedImage)
             }
         }
     }
