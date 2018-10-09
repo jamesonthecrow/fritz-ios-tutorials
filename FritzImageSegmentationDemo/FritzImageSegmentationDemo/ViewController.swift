@@ -6,6 +6,7 @@ class ViewController: UIViewController {
 
     var cameraView: UIImageView!
     var maskView: UIImageView!
+    var backgroundView: UIImageView!
 
     private lazy var visionModel = FritzVisionPeopleSegmentationModel()
 
@@ -24,6 +25,15 @@ class ViewController: UIViewController {
 
         cameraView.mask = maskView
 
+        backgroundView = UIImageView(frame: view.bounds)
+        backgroundView.contentMode = .scaleAspectFill
+
+        let blurView = CustomBlurView(withRadius: 6.0)
+        blurView.frame = self.cameraView.bounds
+
+        backgroundView.addSubview(blurView)
+
+        view.addSubview(backgroundView)
         view.addSubview(cameraView)
 
         // Setup camera
@@ -66,8 +76,10 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             guard let mask = mask, let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)  else { return }
 
             DispatchQueue.main.async {
-                self?.cameraView.image = UIImage(pixelBuffer: imageBuffer)
+                let background = UIImage(pixelBuffer: imageBuffer)
+                self?.cameraView.image = background
                 self?.maskView.image = mask.toImageMask()
+                self?.backgroundView.image = background
             }
         }
     }
