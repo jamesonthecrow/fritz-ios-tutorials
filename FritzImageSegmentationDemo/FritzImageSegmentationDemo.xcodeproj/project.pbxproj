@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33D68F0AA3D533CA117ABA11 /* Pods_FritzImageSegmentationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */; };
 		830D47BD216CF3530003DE84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D47BC216CF3530003DE84 /* AppDelegate.swift */; };
 		830D47BF216CF3530003DE84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D47BE216CF3530003DE84 /* ViewController.swift */; };
 		830D47C2216CF3530003DE84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830D47C0216CF3530003DE84 /* Main.storyboard */; };
@@ -36,6 +37,9 @@
 		830D47CD216CF3530003DE84 /* FritzImageSegmentationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FritzImageSegmentationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		830D47D1216CF3530003DE84 /* FritzImageSegmentationDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FritzImageSegmentationDemoTests.swift; sourceTree = "<group>"; };
 		830D47D3216CF3530003DE84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzImageSegmentationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzImageSegmentationDemo.release.xcconfig"; path = "Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzImageSegmentationDemo.debug.xcconfig"; path = "Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D68F0AA3D533CA117ABA11 /* Pods_FritzImageSegmentationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,8 @@
 				830D47BB216CF3530003DE84 /* FritzImageSegmentationDemo */,
 				830D47D0216CF3530003DE84 /* FritzImageSegmentationDemoTests */,
 				830D47BA216CF3530003DE84 /* Products */,
+				E80DAFCE9CAD317B0AADF19B /* Pods */,
+				B96B639D589745193082A0A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +103,23 @@
 			path = FritzImageSegmentationDemoTests;
 			sourceTree = "<group>";
 		};
+		B96B639D589745193082A0A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CDDD5B65086AE2C6FCA1D47 /* Pods_FritzImageSegmentationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E80DAFCE9CAD317B0AADF19B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */,
+				E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 830D47D6216CF3530003DE84 /* Build configuration list for PBXNativeTarget "FritzImageSegmentationDemo" */;
 			buildPhases = (
+				C9497E339FE0479F9C03BBC9 /* [CP] Check Pods Manifest.lock */,
 				830D47B5216CF3530003DE84 /* Sources */,
 				830D47B6216CF3530003DE84 /* Frameworks */,
 				830D47B7216CF3530003DE84 /* Resources */,
+				F799D23F61F3FAECCF8959DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +217,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9497E339FE0479F9C03BBC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FritzImageSegmentationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F799D23F61F3FAECCF8959DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks.sh",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzCore.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/CoreMLHelpers.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FritzImageSegmentationDemo/Pods-FritzImageSegmentationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		830D47B5216CF3530003DE84 /* Sources */ = {
@@ -358,6 +437,7 @@
 		};
 		830D47D7216CF3530003DE84 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED261265C7C0872D6EDDE954 /* Pods-FritzImageSegmentationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -376,6 +456,7 @@
 		};
 		830D47D8216CF3530003DE84 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7EF8C04E604E27DBB0B8572 /* Pods-FritzImageSegmentationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
