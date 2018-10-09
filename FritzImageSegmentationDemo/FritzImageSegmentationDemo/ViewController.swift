@@ -5,6 +5,9 @@ import Fritz
 class ViewController: UIViewController {
 
     var cameraView: UIImageView!
+    var maskView: UIImageView!
+
+    private lazy var visionModel = FritzVisionPeopleSegmentationModel()
 
     private lazy var cameraSession = AVCaptureSession()
     private let sessionQueue = DispatchQueue(label: "com.fritzdemo.imagesegmentation.session")
@@ -15,6 +18,12 @@ class ViewController: UIViewController {
 
         cameraView = UIImageView(frame: view.bounds)
         cameraView.contentMode = .scaleAspectFill
+
+        maskView = UIImageView(frame: view.bounds)
+        maskView.contentMode = .scaleAspectFill
+
+        cameraView.mask = maskView
+
         view.addSubview(cameraView)
 
         // Setup camera
@@ -50,13 +59,16 @@ class ViewController: UIViewController {
 extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        let image = FritzVisionImage(buffer: sampleBuffer)
+        let options = FritzVisionSegmentationModelOptions(cropAndScaleOption: .scaleFit)
 
-        DispatchQueue.main.async {
-            guard let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+        visionModel.predict(image, options: options) { [weak self] (mask, error) in
+            guard let mask = mask, let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)  else { return }
 
-            // By importing Fritz, you are able to access a helper extension on UIImage that makes it
-            // easy to create a UIImage from a CVPixelBuffer.
-            self.cameraView.image = UIImage(pixelBuffer: imageBuffer)
+            DispatchQueue.main.async {
+                self?.cameraView.image = UIImage(pixelBuffer: imageBuffer)
+                self?.maskView.image = mask.toImageMask()
+            }
         }
     }
 }

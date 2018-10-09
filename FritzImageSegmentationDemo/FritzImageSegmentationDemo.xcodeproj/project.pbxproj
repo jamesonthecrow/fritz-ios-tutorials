@@ -254,6 +254,8 @@
 				"${PODS_ROOT}/Fritz/Frameworks/CoreMLHelpers.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
 				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionPeopleSegmentationModel.framework",
+				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionSegmentationModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -263,6 +265,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreMLHelpers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionPeopleSegmentationModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionSegmentationModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

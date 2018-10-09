@@ -6,5 +6,5 @@ target 'FritzImageSegmentationDemo' do
 
   pod 'Fritz'
   pod 'Fritz/Vision'
-
+  pod 'Fritz/VisionSegmentationModel/People'
 end
