@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8340E48B21BEDB1E00DBCB54 /* FritzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48321BEDB1E00DBCB54 /* FritzCore.framework */; };
+		8340E48D21BEDB1E00DBCB54 /* CoreMLHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48521BEDB1E00DBCB54 /* CoreMLHelpers.framework */; };
+		8340E48E21BEDB1E00DBCB54 /* FritzVisionStyleModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48621BEDB1E00DBCB54 /* FritzVisionStyleModel.framework */; };
+		8340E48F21BEDB1E00DBCB54 /* FritzManagedModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48721BEDB1E00DBCB54 /* FritzManagedModel.framework */; };
+		8340E49021BEDB1E00DBCB54 /* FritzVisionStyleModelPaintings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48821BEDB1E00DBCB54 /* FritzVisionStyleModelPaintings.framework */; };
+		8340E49121BEDB1E00DBCB54 /* Fritz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48921BEDB1E00DBCB54 /* Fritz.framework */; };
+		8340E49421BEDB2700DBCB54 /* CoreMLHelpers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48521BEDB1E00DBCB54 /* CoreMLHelpers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8340E49621BEDB2700DBCB54 /* Fritz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48921BEDB1E00DBCB54 /* Fritz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8340E49821BEDB2700DBCB54 /* FritzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48321BEDB1E00DBCB54 /* FritzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8340E49A21BEDB2700DBCB54 /* FritzManagedModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48721BEDB1E00DBCB54 /* FritzManagedModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8340E49B21BEDB2700DBCB54 /* FritzVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48421BEDB1E00DBCB54 /* FritzVision.framework */; };
+		8340E49C21BEDB2700DBCB54 /* FritzVision.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48421BEDB1E00DBCB54 /* FritzVision.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8340E49E21BEDB2700DBCB54 /* FritzVisionStyleModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48621BEDB1E00DBCB54 /* FritzVisionStyleModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8340E49F21BEDB2700DBCB54 /* FritzVisionStyleModelBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48A21BEDB1E00DBCB54 /* FritzVisionStyleModelBase.framework */; };
+		8340E4A021BEDB2700DBCB54 /* FritzVisionStyleModelBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48A21BEDB1E00DBCB54 /* FritzVisionStyleModelBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8340E4A221BEDB2700DBCB54 /* FritzVisionStyleModelPaintings.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8340E48821BEDB1E00DBCB54 /* FritzVisionStyleModelPaintings.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83AC97BA21495DD400E86B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97B921495DD400E86B44 /* AppDelegate.swift */; };
 		83AC97BC21495DD400E86B44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97BB21495DD400E86B44 /* ViewController.swift */; };
 		83AC97BF21495DD400E86B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83AC97BD21495DD400E86B44 /* Main.storyboard */; };
@@ -15,11 +31,38 @@
 		83AC97D12149609C00E86B44 /* OpenGLPixelBufferView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97CC2149609C00E86B44 /* OpenGLPixelBufferView.m */; };
 		83AC97D22149609C00E86B44 /* ShaderUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97CD2149609C00E86B44 /* ShaderUtilities.c */; };
 		83AC97D42149610700E86B44 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97D32149610700E86B44 /* VideoPreviewView.swift */; };
-		A7D3C0B1300D396F14FDAB29 /* Pods_FritzStyleTransferDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8340E4A321BEDB2700DBCB54 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8340E49A21BEDB2700DBCB54 /* FritzManagedModel.framework in Embed Frameworks */,
+				8340E49821BEDB2700DBCB54 /* FritzCore.framework in Embed Frameworks */,
+				8340E4A221BEDB2700DBCB54 /* FritzVisionStyleModelPaintings.framework in Embed Frameworks */,
+				8340E49621BEDB2700DBCB54 /* Fritz.framework in Embed Frameworks */,
+				8340E49421BEDB2700DBCB54 /* CoreMLHelpers.framework in Embed Frameworks */,
+				8340E49E21BEDB2700DBCB54 /* FritzVisionStyleModel.framework in Embed Frameworks */,
+				8340E4A021BEDB2700DBCB54 /* FritzVisionStyleModelBase.framework in Embed Frameworks */,
+				8340E49C21BEDB2700DBCB54 /* FritzVision.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		474BAFA4BEF2E1D2150FE975 /* Pods-FritzStyleTransferDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzStyleTransferDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8340E48321BEDB1E00DBCB54 /* FritzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzCore.framework; path = "../../swift-framework/Frameworks/FritzCore.framework"; sourceTree = "<group>"; };
+		8340E48421BEDB1E00DBCB54 /* FritzVision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzVision.framework; path = "../../swift-framework/Frameworks/FritzVision.framework"; sourceTree = "<group>"; };
+		8340E48521BEDB1E00DBCB54 /* CoreMLHelpers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMLHelpers.framework; path = "../../swift-framework/Frameworks/CoreMLHelpers.framework"; sourceTree = "<group>"; };
+		8340E48621BEDB1E00DBCB54 /* FritzVisionStyleModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzVisionStyleModel.framework; path = "../../swift-framework/Frameworks/FritzVisionStyleModel.framework"; sourceTree = "<group>"; };
+		8340E48721BEDB1E00DBCB54 /* FritzManagedModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzManagedModel.framework; path = "../../swift-framework/Frameworks/FritzManagedModel.framework"; sourceTree = "<group>"; };
+		8340E48821BEDB1E00DBCB54 /* FritzVisionStyleModelPaintings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzVisionStyleModelPaintings.framework; path = "../../swift-framework/Frameworks/FritzVisionStyleModelPaintings.framework"; sourceTree = "<group>"; };
+		8340E48921BEDB1E00DBCB54 /* Fritz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fritz.framework; path = "../../swift-framework/Frameworks/Fritz.framework"; sourceTree = "<group>"; };
+		8340E48A21BEDB1E00DBCB54 /* FritzVisionStyleModelBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FritzVisionStyleModelBase.framework; path = "../../swift-framework/Frameworks/FritzVisionStyleModelBase.framework"; sourceTree = "<group>"; };
 		83AC97B621495DD400E86B44 /* FritzStyleTransferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FritzStyleTransferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83AC97B921495DD400E86B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83AC97BB21495DD400E86B44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,8 +76,6 @@
 		83AC97CF2149609C00E86B44 /* OpenGLPixelBufferView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLPixelBufferView.h; sourceTree = "<group>"; };
 		83AC97D02149609C00E86B44 /* ShaderUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtilities.h; sourceTree = "<group>"; };
 		83AC97D32149610700E86B44 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
-		A7D3C2F52479434BCD005E10 /* Pods-FritzStyleTransferDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FritzStyleTransferDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FritzStyleTransferDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,20 +83,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7D3C0B1300D396F14FDAB29 /* Pods_FritzStyleTransferDemo.framework in Frameworks */,
+				8340E49121BEDB1E00DBCB54 /* Fritz.framework in Frameworks */,
+				8340E48B21BEDB1E00DBCB54 /* FritzCore.framework in Frameworks */,
+				8340E49B21BEDB2700DBCB54 /* FritzVision.framework in Frameworks */,
+				8340E48D21BEDB1E00DBCB54 /* CoreMLHelpers.framework in Frameworks */,
+				8340E48E21BEDB1E00DBCB54 /* FritzVisionStyleModel.framework in Frameworks */,
+				8340E49F21BEDB2700DBCB54 /* FritzVisionStyleModelBase.framework in Frameworks */,
+				8340E48F21BEDB1E00DBCB54 /* FritzManagedModel.framework in Frameworks */,
+				8340E49021BEDB1E00DBCB54 /* FritzVisionStyleModelPaintings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		120A9D60EB35CB4E7BFB96C3 /* Pods */ = {
+		8340E43E21BECF1200DBCB54 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7D3C2F52479434BCD005E10 /* Pods-FritzStyleTransferDemo.debug.xcconfig */,
-				474BAFA4BEF2E1D2150FE975 /* Pods-FritzStyleTransferDemo.release.xcconfig */,
+				8340E48521BEDB1E00DBCB54 /* CoreMLHelpers.framework */,
+				8340E48921BEDB1E00DBCB54 /* Fritz.framework */,
+				8340E48321BEDB1E00DBCB54 /* FritzCore.framework */,
+				8340E48721BEDB1E00DBCB54 /* FritzManagedModel.framework */,
+				8340E48421BEDB1E00DBCB54 /* FritzVision.framework */,
+				8340E48621BEDB1E00DBCB54 /* FritzVisionStyleModel.framework */,
+				8340E48A21BEDB1E00DBCB54 /* FritzVisionStyleModelBase.framework */,
+				8340E48821BEDB1E00DBCB54 /* FritzVisionStyleModelPaintings.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		83AC97AD21495DD400E86B44 = {
@@ -63,8 +117,7 @@
 			children = (
 				83AC97B821495DD400E86B44 /* FritzStyleTransferDemo */,
 				83AC97B721495DD400E86B44 /* Products */,
-				120A9D60EB35CB4E7BFB96C3 /* Pods */,
-				BB943EB300172DC593FAF437 /* Frameworks */,
+				8340E43E21BECF1200DBCB54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,14 +156,6 @@
 			path = "Apple OpenGL Buffer View";
 			sourceTree = "<group>";
 		};
-		BB943EB300172DC593FAF437 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0E29CF34AF2209CD858DA6D /* Pods_FritzStyleTransferDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,11 +163,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83AC97C821495DD600E86B44 /* Build configuration list for PBXNativeTarget "FritzStyleTransferDemo" */;
 			buildPhases = (
-				5D1BF771AE4439EF6FE66C95 /* [CP] Check Pods Manifest.lock */,
 				83AC97B221495DD400E86B44 /* Sources */,
 				83AC97B321495DD400E86B44 /* Frameworks */,
 				83AC97B421495DD400E86B44 /* Resources */,
-				861F0BDBE5ADD909627E5917 /* [CP] Embed Pods Frameworks */,
+				8340E4A321BEDB2700DBCB54 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,51 +222,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5D1BF771AE4439EF6FE66C95 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FritzStyleTransferDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		861F0BDBE5ADD909627E5917 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks.sh",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzCore.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzManagedModel.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzVision.framework",
-				"${PODS_ROOT}/Fritz/Frameworks/FritzVisionStyleModel.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzManagedModel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVision.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FritzVisionStyleModel.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FritzStyleTransferDemo/Pods-FritzStyleTransferDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83AC97B221495DD400E86B44 /* Sources */ = {
@@ -375,13 +374,20 @@
 		};
 		83AC97C921495DD600E86B44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7D3C2F52479434BCD005E10 /* Pods-FritzStyleTransferDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3RGJF7P9D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/../../swift-framework/Frameworks",
+				);
 				INFOPLIST_FILE = FritzStyleTransferDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.chris.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FritzStyleTransferDemo/Apple OpenGL Buffer View/Buffer-View-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -391,13 +397,20 @@
 		};
 		83AC97CA21495DD600E86B44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 474BAFA4BEF2E1D2150FE975 /* Pods-FritzStyleTransferDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T3RGJF7P9D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/../../swift-framework/Frameworks",
+				);
 				INFOPLIST_FILE = FritzStyleTransferDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.FritzStyleTransferDemo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fritz.chris.FritzStyleTransferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FritzStyleTransferDemo/Apple OpenGL Buffer View/Buffer-View-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
