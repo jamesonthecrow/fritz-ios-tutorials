@@ -6,23 +6,23 @@ Custom Style Models
 
 2. Conform your model to a Fritz Protocol with an extension. See the `Models/Models+Fritz.swift` file for details.
 
-E.g.:
-```
-extension customStyleModel1280x720: SwiftIdentifiedModel {
-    static let modelIdentifier = "abc-123"
-    static let packagedModelVersion = 1
-}
-```
+    E.g.:
+    ```
+    extension customStyleModel1280x720: SwiftIdentifiedModel {
+        static let modelIdentifier = "abc-123"
+        static let packagedModelVersion = 1
+    }
+    ```
 
-To enable model analytics and release management, upload the same `.mlmodel` to your app in [Fritz](https://app.fritz.ai) and change the `modelIdentifier` above.
+    To enable model analytics and release management, upload the same `.mlmodel` to your app in [Fritz](https://app.fritz.ai) and change the `modelIdentifier` above.
 
 3. Create a new `FritzVisionStyleModel` with a custom model:
 
-```
-lazy var styleModel = FritzVisionStyleModel(model: customStyleModel1280x720().fritz())
-```
+    ```
+    lazy var styleModel = FritzVisionStyleModel(model: customStyleModel1280x720().fritz())
+    ```
 
-Note the `.fritz()` call after the model is instantiated.
+    Note the `.fritz()` call after the model is instantiated.
 
 ### Changing camera resolution
 
