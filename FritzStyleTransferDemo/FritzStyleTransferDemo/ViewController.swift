@@ -14,7 +14,12 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     var previewView = VideoPreviewView()
 
+    // Use a built in style model
     lazy var styleModel = FritzVisionStyleModel.starryNight
+    
+    // Uncomment to use a custom model
+    // lazy var styleModel = FritzVisionStyleModel(model: customStyleModel1280x720().fritz())
+
 
     private lazy var captureSession: AVCaptureSession = {
         let session = AVCaptureSession()
@@ -26,7 +31,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         session.addInput(input)
 
         // The style transfer takes a 640x480 image as input and outputs an image of the same size.
-        session.sessionPreset = AVCaptureSession.Preset.vga640x480
+        session.sessionPreset = AVCaptureSession.Preset.hd1280x720
         return session
     }()
 

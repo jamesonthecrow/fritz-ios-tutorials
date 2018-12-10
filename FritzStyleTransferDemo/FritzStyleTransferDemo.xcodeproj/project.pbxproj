@@ -31,6 +31,7 @@
 		83AC97D12149609C00E86B44 /* OpenGLPixelBufferView.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97CC2149609C00E86B44 /* OpenGLPixelBufferView.m */; };
 		83AC97D22149609C00E86B44 /* ShaderUtilities.c in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97CD2149609C00E86B44 /* ShaderUtilities.c */; };
 		83AC97D42149610700E86B44 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC97D32149610700E86B44 /* VideoPreviewView.swift */; };
+		D497A8AA21BF0DD800A59924 /* Models+Fritz.swift in Sources */ = {isa = PBXBuildFile; fileRef = D497A8A921BF0DD800A59924 /* Models+Fritz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +77,7 @@
 		83AC97CF2149609C00E86B44 /* OpenGLPixelBufferView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLPixelBufferView.h; sourceTree = "<group>"; };
 		83AC97D02149609C00E86B44 /* ShaderUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderUtilities.h; sourceTree = "<group>"; };
 		83AC97D32149610700E86B44 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
+		D497A8A921BF0DD800A59924 /* Models+Fritz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Fritz.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		83AC97B821495DD400E86B44 /* FritzStyleTransferDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D497A8A821BF0DBA00A59924 /* Models */,
 				83AC97CB2149609C00E86B44 /* Apple OpenGL Buffer View */,
 				83AC97B921495DD400E86B44 /* AppDelegate.swift */,
 				83AC97D32149610700E86B44 /* VideoPreviewView.swift */,
@@ -154,6 +157,14 @@
 				83AC97D02149609C00E86B44 /* ShaderUtilities.h */,
 			);
 			path = "Apple OpenGL Buffer View";
+			sourceTree = "<group>";
+		};
+		D497A8A821BF0DBA00A59924 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D497A8A921BF0DD800A59924 /* Models+Fritz.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83AC97D12149609C00E86B44 /* OpenGLPixelBufferView.m in Sources */,
+				D497A8AA21BF0DD800A59924 /* Models+Fritz.swift in Sources */,
 				83AC97D22149609C00E86B44 /* ShaderUtilities.c in Sources */,
 				83AC97BC21495DD400E86B44 /* ViewController.swift in Sources */,
 				83AC97BA21495DD400E86B44 /* AppDelegate.swift in Sources */,
